@@ -4,26 +4,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 // reset universal
 header{
     background-color: red;
     color: white;
+    font-family: "Open Sans", sans-serif;//familia da fonte
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px;
 }
+ li{
+    font-weight: 200;
+ }
+ ul{
+    display: flex;
+    border: solid;
+    justify-content: space-around;
+    width: 40vw;
+    list-style: none
+ }
 
-section{
-    background-color: gray;
+.boxcard{
+    background-color: gray;//cor de fundo cinza 
+    display: flex;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
 }
 
 .card{
     background-color: purple;
     border: solid 1px #000000;
-    border-radius: 10px;
-    overflow: hidden;
     height: 40vh;
     width: 25vw;
     text-align: center;
-    margin-bottom: 10px;
+    
 
     img{
         height: 70%;
@@ -39,9 +58,48 @@ section{
 #btn1{
     background-color: blue;
     color: white;
+    font: size 0,5rem;
 }
 
 #btn2{
     background-color: red;
     color: white;
+    font: size 0,5rem;
+}
+#btn3{
+    background-color: red;
+    color: white;
+    font: size 0,5rem;
+}
+.cine{
+    height: 50vh;
+    background-image: url(https://www.secult.ce.gov.br/wp-content/uploads/sites/43/2018/10/Cinema.jpg) ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 10rem;
+        color: #fdf0d5;
+    }
+}
+
+footer{
+    height: 20vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    p{
+        color: white;
+    }
+    ul{
+        color: white;
+    }
 }
